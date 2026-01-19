@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            color:aqua;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p id="message">click the button to change this message.</p>
+    </div>
+    <button onclick ="changeMessage()">change Message</button>
+    <button onclick ="addnewelement()">Add New Element</button>
+    <script>
+        function changeMessage(){
+            
+            let messageElement=document.getElementById("message");
+            // change textcontent
+            messageElement.textContent="Message changed using textcontent";
+            //change inner Html
+            messageElement.innerHTML +="<br> Added using InnerHtml.";
+            // Apply styles
+            messageElement.style.color="blue";
+            messageElement.style.fontSize="1.8em";
+        }
+        function addnewelement(){
+            let contentDiv=document.querySelector("#content");
+            let newElement=document.createElement("p");
+            newElement.textContent="This is a new paragraph added dynamic";
+            newElement.classList.add("highlight");
+            contentDiv.appendChild(newElement);
+        }
+    </script>
+</body>
+</html>

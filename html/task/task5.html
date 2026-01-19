@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            background-color: #7fb86c;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            border: #7fb86c solid 2px;
+            background-color:white;
+            padding:40px 50px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            width: 400px;
+            height: 300px;
+            margin: 100px;
+            justify-content: center;
+            text-align:center;
+        }
+
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            margin: 5px 0;
+            width: 270px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color:antiquewhite;
+            
+            font-size:20px;
+        }
+        input[type="submit"] {
+            align-content: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 0px;
+            width:290px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .te{
+            color: #7fb86c ;
+            cursor: pointer;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" class="box">
+    <input type="text"placeholder="UserName" required><br>
+    <input type="password"  placeholder="Password" required><br><br>
+    <input type="submit" value="Login"><br><br>
+    <label>Not registered? </label><a class="te" href="#Create an account">Create an Account !</a>
+    </form>>
+</body>
+</html>

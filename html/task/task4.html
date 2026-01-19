@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            height: 100vh;
+        } 
+        nav{
+            display:flex; /* Default hidden for larger screens */
+            background-color: #333;
+            padding: 20px;
+            font-size:36px;
+        }
+        nav a {
+            color: rgb(247, 239, 239);
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+       @media (max-width: 600px) {
+            nav{
+                display: flex; /* Show nav on small screens */
+            justify-content: space-around;}
+       }
+        
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_5szpgfto9i_e&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=674893540034&hvpos=&hvnetw=g&hvrand=14034338555239625913&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9148780&hvtargid=kwd-64107830&hydadcr=14452_2316413&gad_source=1">Home</a>
+        <a href="#about">About</a>
+        <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=508510&ref_=nav_em_cs_help_0_1_1_37">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</body>
+</html>
