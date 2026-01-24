@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>My Blog Post</h1>
+    <div>
+        {% for obj in object_list %}
+        <div class="container id_{{ obj.id }}">
+            <h2>{{ obj.title }}</h2>
+            <p>{{ obj.description}}</p>
+            <img src="{{obj.blogcover.url}}" alt="{{ obj.title }}">
+
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
